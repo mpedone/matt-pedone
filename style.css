@@ -19,7 +19,7 @@ header {
     background: #31594e;
     padding: 20px;
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     gap: 40px;
 }
 
@@ -34,10 +34,21 @@ header {
     color: #fff;
 }
 
+.head h1 {
+    font-size: 40pt;
+    margin: 0;
+}
+
 img.logo {
     width: 100px;
-    height: 100px;
+    height: 110px;
+    margin-left: 20px;
 }
+
+img.title {
+    width: 629.302px;
+}
+
 .main {
     display: flex;
     background-color: #d9d4ba;
@@ -48,14 +59,27 @@ img.logo {
     padding: 10px;
     width: 300px;
     background-color: #8da693;
+    flex-direction: column;
+    align-items: center;
 }
 
 .body-text {
     flex: 3;
     display: flex;
-    flex-direction: column;
     margin: 1em 3em;
     color: #222026;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+.body-text img {
+    height: 269.415px;
+    width: 150px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav a {
@@ -79,16 +103,34 @@ img.logo {
     margin-bottom: 10px;
 }
 
-h1 {
+.nav img {
+    width: 100px;
+    height: 107px;
+    opacity: 0.7;
+    border: 1px solid;
+    padding: 10px 80px;
+}
+
+/* h1 {
     font-size: 75pt;
     margin-bottom: 0;
 }
 h1, h2 {
     font-family: "Helvetica", sans-serif;
+} */
+
+.main h1, 
+.main h2 {
+    font-family: 'Courier', monospace;
+    margin: 0;
+}
+
+.main h1 {
+    font-size: 35pt;
 }
 
 .main h2 {
-    font-family: 'Courier', monospace;
+    font-size: 20pt;
 }
 
 footer {
