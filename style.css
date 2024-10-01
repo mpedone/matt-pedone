@@ -104,7 +104,9 @@ img.title {
 
 .article {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    width: 100%;
+    height: 100vh;
 }
 
 .nav a {
