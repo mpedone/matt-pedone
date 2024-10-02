@@ -99,14 +99,14 @@ img.title {
 
 .body-text img {
     height: 269.415px;
-    width: 150px;
+    /* width: 150px; */
 }
 
 .article {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .nav a {
