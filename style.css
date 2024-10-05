@@ -68,12 +68,18 @@ a:visited {
     margin-bottom: 10px;
 }
 
+.head a {
+    flex: 25%;
+}
+
 .title {
     display: flex;
     border: 3px solid #fff;
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
     flex-direction: column;
     align-items: center;
+    flex: 75%;
+    justify-content: center;
 }
 img.logo {
     /* width: 100px; */
@@ -98,10 +104,11 @@ img.title {
     background-color: #8da693;
     flex-direction: column;
     align-items: center;
+    flex: 25%;
 }
 
 .body-text {
-    flex: 3;
+    flex: 75%;
     display: flex;
     margin: 1em 3em;
     color: #222026;
@@ -196,4 +203,106 @@ footer {
     position: sticky;
     width: 100%;
     bottom: 0px;
+}
+
+@media screen and (max-width: 955px) {
+    .head h1 {
+        font-size: 4em;
+    }
+    img.logo {
+        margin: 0 60px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .head h1 {
+        font-size: 3.5em;
+    }
+    img.logo {
+        margin: 0 45px;
+    }
+    .info img {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .head h1 {
+        font-size: 3em;
+    }
+    img.logo {
+        margin: 0 30px;
+    }
+    .body-text {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .info img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .head h1 {
+        font-size: 2em;
+    }
+    img.logo {
+        margin: 0 30px;
+        height: 85px;
+    }
+    .body-text {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .nav img {
+        height: 57px;
+        width: 50px;
+    }
+    .main h1 {
+        font-size: 20pt;
+    }
+    .info img {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .head h2 {
+        font-size: 0.5em;
+    }
+    .nav a {
+        font-size: 14pt;
+    }
+    .info img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .head h1 {
+        font-size: 2.5em;
+        text-align: center;
+        width: 400px;
+    }
+    .head h2 {
+        text-align: center;
+    }
+    .info img {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .head h1 {
+        font-size: 1.5em;
+        width: 320px;
+    }
+    .main h1 {
+        font-size: 16pt;
+    }
 }
