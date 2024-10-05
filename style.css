@@ -237,6 +237,9 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
     }
+    .contact {
+        flex-direction: column;
+    }
     .info img {
         height: 300px;
     }

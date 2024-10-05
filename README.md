@@ -22,10 +22,10 @@ Header text is Helvetica, as will be any captions and/or labels. The rest of the
 
 ## Next Steps
 
-- Finish the graphics
 - Design a timeline for my About Me page
   - link from timeline to relevant sections of Bio
 - Add JavaScript to "refresh" main body section
 - Add Links
-- Add Contact Page
-- Add blog and start blogging
+- Start blogging
+
+I tried implementing some JavaScript, but I don't know enough to get it working correctly yet. Hopefully soon. For now, the site is static with separate pages. I have implemented a bunch of media queries to make the site responsive, but I want to learn more about that, as it feels clunky. For now, though, my site is up and running!
