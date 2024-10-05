@@ -32,6 +32,18 @@ header {
     gap: 40px;
 }
 
+a {
+    color: #D9734E;
+}
+
+a:hover {
+    color: #efa387;
+}
+
+a:visited {
+    color: #712f18;
+}
+
 .head {
     display: flex;
     /* flex-direction: column; */
@@ -110,12 +122,10 @@ img.title {
 }
 
 .nav a {
-    color: #000;
-    margin: 0 15px;
     text-decoration: none;
     color: #fff;
     font-size: 16pt;
-    flex-shrink: 0;
+    margin: 0;
 }
 .nav a:hover {
     text-decoration: underline;
@@ -123,7 +133,7 @@ img.title {
 
 .nav ol {
     list-style: upper-roman;
-    margin-left: 3em;
+    /* margin-left: 3em; */
     color: #fff;
 }
 
@@ -161,6 +171,25 @@ h1, h2 {
     font-size: 20pt;
 }
 
+.contact {
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-body {
+    width: 100%;
+}
+
+.info {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.info img {
+    height: 600px;
+}
 footer {
     background-color: #d9734e;
     text-align: center;
