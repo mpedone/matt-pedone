@@ -247,7 +247,7 @@ footer {
     .body-text {
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
     .contact {
         flex-direction: column;
@@ -268,14 +268,14 @@ footer {
         height: 85px;
     }
     .body-text {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    .contact {
         flex-direction: column;
+        align-items: center;
         justify-content: flex-start;
     }
+    /* .contact {
+        flex-direction: column;
+        justify-content: flex-start;
+    } */
     .nav img {
         height: 57px;
         width: 50px;
