@@ -1,6 +1,7 @@
 const navList = document.querySelector('.nav');
 const img = document.querySelector(".nav img");
 let list = document.createElement('ul');
+list.classList.add('menus');
 
 let listItem1 = document.createElement('li');
 listItem1.id = "index";
