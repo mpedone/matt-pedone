@@ -254,7 +254,8 @@ input[type="checkbox"] {
         justify-content: flex-start;
     }
     .info img {
-        height: 300px;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -278,9 +279,9 @@ input[type="checkbox"] {
     .main h1 {
         font-size: 20pt;
     }
-    .info img {
+    /* .info img {
         height: 250px;
-    }
+    } */
     .article p {
         text-align: justify;
         font-size: 3vw;
@@ -291,9 +292,9 @@ input[type="checkbox"] {
     .head h2 {
         font-size: 0.5em;
     }
-    .info img {
+    /* .info img {
         height: 400px;
-    }
+    } */
     .sidebar {
         width: 100px;
     }
@@ -367,9 +368,9 @@ input[type="checkbox"] {
     .head a {
         display: none;
     }
-    .info img {
+    /* .info img {
         height: 100px;
-    }
+    } */
 }
 
 @media screen and (max-width: 415px) {
