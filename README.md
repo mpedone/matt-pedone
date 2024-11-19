@@ -29,3 +29,5 @@ Header text is Helvetica, as will be any captions and/or labels. The rest of the
 - Start blogging
 
 I tried implementing some JavaScript, but I don't know enough to get it working correctly yet. Hopefully soon. For now, the site is static with separate pages. I have implemented a bunch of media queries to make the site responsive, but I want to learn more about that, as it feels clunky. For now, though, my site is up and running!
+
+Re-worked some of the font sizes, and the header image size to make them more responsive. Also eliminates a lot of media queries, which were getting clunky. Clamp is a neat CSS function.
