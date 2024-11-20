@@ -265,6 +265,9 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 530px) {
+    html {
+        font-weight: bold;
+    }
     .spacer {
         display: none;
     }
