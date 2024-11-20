@@ -72,13 +72,17 @@ a:visited {
     text-wrap: nowrap;
 }
 
-.head a {
+/* .head a {
     display: flex;
 }
 
 .header-img {
     display: flex;
     margin: 0 auto 0 20px;
+} */
+
+.spacer {
+    flex: 1 1 100px;
 }
 
 .title {
@@ -90,12 +94,14 @@ a:visited {
     margin-right: auto;
     padding: 0.5em 1.5em 0;
     margin-left: 10px;
+    flex: 3;
 }
-img.logo {
+
+/* img.logo {
     width: 10cqi;
     margin: 0 auto;
     max-width: 200px;
-}
+} */
 
 img.title {
     /* width: 629.302px; */
@@ -123,6 +129,7 @@ img.title {
     gap: 30px;
     margin-left: 30px;
     min-height: 100vh;
+    justify-content: space-evenly;
     /* flex-wrap: wrap-reverse; */
 }
 
@@ -135,7 +142,7 @@ img.title {
 .article {
     display: flex;
     flex-direction: column;
-    max-width: 45ch;
+    max-width: 60ch;
     text-align: justify;
     text-wrap: pretty;
 }
@@ -190,7 +197,7 @@ li.highlight {
     font-size: calc(1.05rem + 0.5vw);
 }
 
-.contact {
+/* .contact {
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
@@ -198,7 +205,7 @@ li.highlight {
 
 .contact-body {
     width: 100%;
-}
+} */
 
 .info {
     flex-wrap: wrap;
@@ -209,6 +216,7 @@ li.highlight {
 .info img {
     height: 600px;
 }
+
 footer {
     background-color: #d9734e;
     text-align: center;
@@ -238,11 +246,11 @@ input[type="checkbox"] {
         align-items: center;
         justify-content: flex-start;
     }
-    .contact {
+    /* .contact {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-    }
+    } */
     .info img {
         width: 70%;
         height: auto;
@@ -250,11 +258,6 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 670px) {
-    .body-text {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: flex-start;
-    }
     .nav img {
         height: 57px;
         width: 50px;
@@ -262,6 +265,9 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 530px) {
+    .spacer {
+        display: none;
+    }
     .sidebar {
         width: 75px;
     }
@@ -311,26 +317,6 @@ input[type="checkbox"] {
         transform: translateY(0);
     }
     .nav img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 495px) {
-    .head {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .title {
-        margin: 0;
-    }
-    .head h1 {
-        text-align: center;
-    }
-    .head h2 {
-        text-align: center;
-    }
-    .header-img {
         display: none;
     }
 }
