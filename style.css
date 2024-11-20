@@ -135,7 +135,7 @@ img.title {
 .article {
     display: flex;
     flex-direction: column;
-    max-width: 60ch;
+    max-width: 45ch;
     text-align: justify;
     text-wrap: pretty;
 }
