@@ -147,6 +147,11 @@ img.title {
     text-wrap: pretty;
 }
 
+.nav {
+    position: sticky;
+    top: 25px;
+}
+
 .nav a {
     text-decoration: none;
     color: #fff;
@@ -162,6 +167,8 @@ img.title {
     list-style: none;
     color: #fff;
     padding: 0;
+    position: sticky;
+    top: 20px;
 }
 
 .nav ul li {
@@ -227,10 +234,14 @@ footer {
 
 .hamburger {
     display: none;
+    position: sticky;
+    top: 20px;
 }
 
 input[type="checkbox"] {
     display: none;
+    position: sticky;
+    top: 20px;
 }
 
 
@@ -286,7 +297,7 @@ input[type="checkbox"] {
         display: block;
         cursor: pointer;
         right: 0;
-        top: 0;
+        /* top: 0; */
     }
     .hamburger span {
         width: 20px;
@@ -314,10 +325,14 @@ input[type="checkbox"] {
         visibility: hidden;
         transform: translateY(-1em);
         transition: transform ease 0.5s;
+        position: sticky;
+        top: 20px;
     }
     input[type="checkbox"]:checked ~ nav .menus {
         visibility: visible;
         transform: translateY(0);
+        position: sticky;
+        top: 20px;
     }
     .nav img {
         display: none;
