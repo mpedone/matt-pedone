@@ -1,9 +1,9 @@
 /* Color Theme Swatches in Hex */
-.black-text { color: #222026; }
+/* .black-text { color: #222026; }
 .header-background { color: #31594E; }
 .sidebar-background { color: #8DA693; }
 .main-background { color: #D9D4BA; }
-.highlight-color { color: #D9734E; }
+.highlight-color { color: #D9734E; } */
 
 @font-face {
     font-family: 'tgl';
@@ -12,15 +12,32 @@
          url('tgl017-lp2q-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html {
     font-size: clamp(16px, 0.75rem + 1vw, 22px);
+    --black-text: #222026;
+    --header-background: #31594E;
+    --sidebar-background: #8DA693;
+    --main-background: #D9D4BA;
+    --highlight-color: #D9734E;
+    --link-red: 217;
+    --link-green: 115;
+    --link-blue: 78;
+    --link-color: rgb(var(--link-red), 
+                      var(--link-green), 
+                      var(--link-blue));
+    --link-hover: rgb(var(--link-red), 
+                      calc(var(--link-green) + 50), 
+                      calc(var(--link-blue) * 2));
+    --link-visited: rgb(calc(var(--link-red) / 2), 
+                      calc(var(--link-green) / 3), 
+                      calc(var(--link-blue) / 3));
 }
 
 body {
     font-family: 'Courier', monospace;
+    color: var(--black-text);
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -29,21 +46,21 @@ body {
 }
 
 header {
-    background: #31594e;
+    background: var(--header-background);
     padding: 20px;
     gap: 40px;
 }
 
 a {
-    color: #D9734E;
+    color: var(--link-color);
 }
 
 a:hover {
-    color: #efa387;
+    color: var(--link-hover);
 }
 
 a:visited {
-    color: #712f18;
+    color: var(--link-visited);
 }
 
 .head {
@@ -110,13 +127,13 @@ img.title {
 
 .main {
     display: flex;
-    background-color: #d9d4ba;
+    background-color: var(--main-background);
 }
 
 .sidebar {
     display: flex;
     padding: 10px;
-    background-color: #8da693;
+    background-color: var(--sidebar-background);
     flex-direction: column;
     align-items: center;
 }
@@ -125,7 +142,7 @@ img.title {
     flex-grow: 3;
     display: flex;
     margin: 1em 3em;
-    color: #222026;
+    color: var(--black-text);
     gap: 30px;
     margin-left: 30px;
     min-height: 100vh;
@@ -177,7 +194,7 @@ img.title {
 }
 
 li.highlight {
-    background-color: #D9734E;
+    background-color: var(--highlight-color);
 }
 
 .nav img {
@@ -225,7 +242,7 @@ li.highlight {
 }
 
 footer {
-    background-color: #d9734e;
+    background-color: var(--highlight-color);
     text-align: center;
     position: sticky;
     width: 100vw;
